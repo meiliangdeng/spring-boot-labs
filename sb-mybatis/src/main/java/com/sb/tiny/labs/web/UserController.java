@@ -78,4 +78,11 @@ public class UserController {
         return "删除成功!";
     }
 
+    // 2020:20:29添加
+    @RequestMapping(value="/delete3/{id}")
+    public String  delete3(@PathVariable("id") Long id) {
+        userMapper.delete(id);
+        return "删除成功!";
+    }
+
 }
